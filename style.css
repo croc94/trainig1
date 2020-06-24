@@ -7,6 +7,9 @@
   --whiteCol: #ffffff;
   --blueCol: #03a6f2;
   --greyCol: #999999;
+  --greenCol: #00d664;
+  --margW: 0 7.5rem;
+  --fontStyle: 'Open Sans', sans-serif;
 }
 
 * body {
@@ -23,6 +26,10 @@
       -ms-flex-align: start;
           align-items: flex-start;
   background: var(--whiteCol);
+}
+
+* body .marginClass {
+  margin: var(--margW);
 }
 
 * body .container {
@@ -43,15 +50,11 @@
   height: 3.5rem;
 }
 
-* body .container header nav div {
-  margin: 0 7.5rem;
-}
-
 * body .container header nav div a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--whiteCol);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--fontStyle);
   font-size: 1rem;
   font-weight: bold;
   font-stretch: normal;
@@ -60,6 +63,23 @@
   letter-spacing: normal;
   text-align: center;
   margin: 0 0.5rem;
+}
+
+* body .container header menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  height: 5rem;
 }
 
 * body .container header menu div {
@@ -79,7 +99,7 @@
 * body .container header menu div p {
   display: inline-block;
   margin: 0 0 0 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--fontStyle);
   font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
@@ -94,5 +114,45 @@
 
 * body .container header menu li {
   display: inline-block;
+  font-family: var(--fontStyle);
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0099ff;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+* body .container header menu li:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: -0.75rem;
+  left: -1.5rem;
+  z-index: -1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 22.5px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+* body .container header menu li:hover {
+  color: var(--whiteCol);
+}
+
+* body .container header menu li:hover:after {
+  background-color: var(--greenCol);
 }
 /*# sourceMappingURL=style.css.map */
