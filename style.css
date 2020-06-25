@@ -8,8 +8,10 @@
   --blueCol: #03a6f2;
   --greyCol: #999999;
   --greenCol: #00d664;
+  --darkCol: #284a6f;
   --margW: 0 7.5rem;
   --fontStyle: 'Open Sans', sans-serif;
+  --_1secHight: 31.25rem;
 }
 
 * body {
@@ -154,5 +156,95 @@
 
 * body .container header menu li:hover:after {
   background-color: var(--greenCol);
+}
+
+* body .container header ._1stSec {
+  height: var(--_1secHight);
+  background: url(img/Rectangle2.png) no-repeat right;
+}
+
+* body .container header ._1stSec ._1stSec-container {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #0099ff), to(transparent));
+  background: linear-gradient(left, #0099ff 30%, transparent 100%);
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap {
+  height: var(--_1secHight);
+  background: url(img/worldmap-dots.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card {
+  width: 22rem;
+  margin: var(--margW);
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card ._1stSec_card_mainText {
+  font-family: var(--fontStyle);
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--whiteCol);
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card ._1stSec_card_mainText span {
+  color: #284a6f;
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card .asking {
+  font-family: var(--fontStyle);
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.81;
+  letter-spacing: 0.64px;
+  text-align: left;
+  color: var(--darkCol);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.5rem;
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card .asking div:last-child {
+  color: var(--whiteCol);
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card .arrowBut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  font-size: 1.75rem;
+  color: var(--whiteCol);
+}
+
+* body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card .arrowBut i:last-child {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
