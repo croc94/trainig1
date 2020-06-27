@@ -12,6 +12,7 @@
         --greyCol: #999999;
         --greenCol: #00d664;
         --darkCol: #284a6f;
+        --seaCol: #0099ff;
         --margW: 0 7.5rem;
         --fontStyle: 'Open Sans', sans-serif;
         --_1secHight: 31.25rem;
@@ -198,6 +199,96 @@
 
                                     i:last-child {
                                         margin-left: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            article {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                ._2ndSec {
+                    h1 {
+                        text-align: center;
+                        font-family: var(--fontStyle);
+                        font-size: 2.8rem;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.04;
+                        letter-spacing: normal;
+                        color: var(--darkCol);
+                    }
+
+                    ._2ndSecContainer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        ._2ndSecContainer_Block {
+                            width: 17.5rem;
+                            text-align: center;
+                            margin-top: 5.5rem;
+
+                            .fa {
+                                font-size: 5rem;
+                                color: var(--seaCol);
+                            }
+    
+                            h3 {
+                                font-family: var(--fontStyle);
+                                font-size: 1.5rem;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.96;
+                                letter-spacing: normal;
+                                color: var(--darkCol);
+                                text-align: center;
+                            }
+
+                            p {
+                                font-family: var(--fontStyle);
+                                font-size: 1rem;
+                                font-weight: normal;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.5;
+                                letter-spacing: normal;
+                                text-align: center;
+                                color: var(--greyCol);
+                            }
+
+                            &:last-child {
+                                background-color: var(--darkCol);
+                                height: 17.5rem;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                div {
+
+                                    i {
+                                        color: var(--whiteCol);
+                                    }
+    
+                                    p {
+                                        font-family: var(--fontStyle);
+                                        font-size: 1rem;
+                                        font-weight: 600;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: 2.94;
+                                        letter-spacing: normal;
+                                        text-align: center;
+                                        color: var(--whiteCol);
                                     }
                                 }
                             }

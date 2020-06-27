@@ -9,6 +9,7 @@
   --greyCol: #999999;
   --greenCol: #00d664;
   --darkCol: #284a6f;
+  --seaCol: #0099ff;
   --margW: 0 7.5rem;
   --fontStyle: 'Open Sans', sans-serif;
   --_1secHight: 31.25rem;
@@ -246,5 +247,112 @@
 
 * body .container header ._1stSec ._1stSec-container .worldDotMap ._1stSec_card .arrowBut i:last-child {
   margin-left: 1rem;
+}
+
+* body .container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .container article ._2ndSec h1 {
+  text-align: center;
+  font-family: var(--fontStyle);
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  color: var(--darkCol);
+}
+
+* body .container article ._2ndSec ._2ndSecContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block {
+  width: 17.5rem;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block .fa {
+  font-size: 5rem;
+  color: var(--seaCol);
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block h3 {
+  font-family: var(--fontStyle);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.96;
+  letter-spacing: normal;
+  color: var(--darkCol);
+  text-align: center;
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block p {
+  font-family: var(--fontStyle);
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--greyCol);
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block:last-child {
+  background-color: var(--darkCol);
+  height: 17.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block:last-child div i {
+  color: var(--whiteCol);
+}
+
+* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block:last-child div p {
+  font-family: var(--fontStyle);
+  font-size: 1rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.94;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--whiteCol);
 }
 /*# sourceMappingURL=style.css.map */
