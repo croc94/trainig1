@@ -35,6 +35,51 @@
   margin: var(--margW);
 }
 
+* body .h1class {
+  font-family: var(--fontStyle);
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  color: var(--darkCol);
+}
+
+* body .simpleTextClass {
+  font-family: var(--fontStyle);
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--greyCol);
+}
+
+* body .digitals {
+  font-family: var(--fontStyle);
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.53;
+  letter-spacing: normal;
+  color: var(--seaCol);
+}
+
+* body .leftAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * body .container {
   width: 87.5rem;
 }
@@ -267,14 +312,6 @@
 
 * body .container article ._2ndSec h1 {
   text-align: center;
-  font-family: var(--fontStyle);
-  font-size: 2.8rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.04;
-  letter-spacing: normal;
-  color: var(--darkCol);
 }
 
 * body .container article ._2ndSec ._2ndSecContainer {
@@ -314,18 +351,6 @@
   text-align: center;
 }
 
-* body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block p {
-  font-family: var(--fontStyle);
-  font-size: 1rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--greyCol);
-}
-
 * body .container article ._2ndSec ._2ndSecContainer ._2ndSecContainer_Block:last-child {
   background-color: var(--darkCol);
   height: 17.5rem;
@@ -354,5 +379,53 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--whiteCol);
+}
+
+* body .container article ._3rdSec {
+  background-image: url(img/worldmap-dotsCopy2.png);
+  margin-top: 9.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container article ._3rdSec ._3rdSec_InfoBlock {
+  width: 30.5rem;
+}
+
+* body .container article ._3rdSec ._3rdSec_InfoBlock .digitals_block div:first-child {
+  margin-right: 4rem;
+}
+
+* body .container article ._3rdSec ._3rdSec_InfoBlock .store_market {
+  font-family: var(--fontStyle);
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.21;
+  letter-spacing: 0.56px;
+  color: var(--darkCol);
+}
+
+* body .container article ._3rdSec ._3rdSec_InfoBlock .store_market .fa {
+  font-size: 2rem;
+  vertical-align: sub;
+}
+
+* body .container article ._3rdSec ._3rdSec_InfoBlock .store_market div:first-child {
+  margin-right: 4rem;
+}
+
+* body .container article ._3rdSec ._3rdSec_IMGBlock {
+  position: relative;
+  -webkit-transform: translateY(5%) scale(1.2);
+          transform: translateY(5%) scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
