@@ -10,6 +10,7 @@
   --greenCol: #00d664;
   --darkCol: #284a6f;
   --seaCol: #0099ff;
+  --lineCol: #ececec;
   --margW: 0 7.5rem;
   --fontStyle: 'Open Sans', sans-serif;
   --_1secHight: 31.25rem;
@@ -427,5 +428,65 @@
   position: relative;
   -webkit-transform: translateY(5%) scale(1.2);
           transform: translateY(5%) scale(1.2);
+}
+
+* body .container article ._4thSec {
+  width: 100%;
+  margin-top: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .container article ._4thSec ._4thSec_StatBlock {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+* body .container article ._4thSec .veticalLine {
+  width: 2px;
+  height: 4.5rem;
+  background-color: var(--lineCol);
+}
+
+* body .container article ._4thSec button {
+  background-color: var(--greenCol);
+  font-family: var(--fontStyle);
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--whiteCol);
+  border-radius: 25px;
+  border: 0;
+  width: 12.5rem;
+  height: 3.375rem;
+  margin-top: 5.375rem;
 }
 /*# sourceMappingURL=style.css.map */
