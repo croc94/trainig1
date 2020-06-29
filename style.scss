@@ -10,10 +10,12 @@
         --whiteCol: #ffffff;
         --blueCol: #03a6f2;
         --greyCol: #999999;
+        --greyCol_2:#c0bebe;
         --greenCol: #00d664;
         --darkCol: #284a6f;
         --seaCol: #0099ff;
         --lineCol: #ececec;
+        --blackCol: #000000;
         --margW: 0 7.5rem;
         --fontStyle: 'Open Sans', sans-serif;
         --_1secHight: 31.25rem;
@@ -401,6 +403,44 @@
                         height: 3.375rem;
                         margin-top: 5.375rem;
                     }
+                }
+
+                ._5thSec {
+                    text-align: center;
+
+                    iframe {
+                        width: 41.875rem;
+                        height: 27.875rem;
+                    }
+                    
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .simpleTextClass {
+                            width: 23rem;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            margin-left: 3.5rem;
+
+                            p {
+                                display: inline;
+                                color: var(--greyCol_2);
+                                text-align: left;
+
+                                &:last-child {
+                                    font-style: italic;
+                                    color: var(--blackCol);
+                                }
+
+                                b {
+                                    color: var(--blackCol);
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
         }
