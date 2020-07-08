@@ -75,6 +75,7 @@
 
         .container {
             width: 87.5rem;
+            overflow: hidden;
 
             header {
                 nav {
@@ -441,6 +442,70 @@
                         }
                     }
 
+                }
+
+                ._6thSec {
+                    background-image: url(img/worldmap-dots3.png);
+                    margin-top: 6.2rem;
+                    padding: 7.2rem 0;
+                    position: relative;
+                    width: 100%;
+
+                    .fa {
+                        font-size: 8rem;
+                        color: var(--seaCol);
+                        z-index: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        &:last-child {
+                            top: 60%;
+                            left: 90%;
+                        }
+                    }
+
+                    .owl-carousel {
+                        z-index: 1;
+                        .owl-stage-outer {
+                            overflow: visible;
+
+                            .item {
+                                
+                                .card {
+                                    width: 29.375rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    border: none;
+                                    padding: 1.6rem 3.2rem 0 3.2rem;
+                                    background-color: var(--whiteCol);
+                                    position: relative;
+                                    
+                                    .card-img-top {
+                                        width: 5.75rem;
+                                        height: 5.75rem;
+                                        position: absolute;
+                                        top: -25%;
+                                    }
+    
+                                    .card-body {
+                                        text-align: center;
+    
+                                        h5 {
+                                            color: var(--blackCol);
+                                            font-weight: bold;
+                                        }
+    
+                                        p:last-child {
+                                            color: var(--blackCol);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
