@@ -16,6 +16,7 @@
   --margW: 0 7.5rem;
   --fontStyle: 'Open Sans', sans-serif;
   --_1secHight: 31.25rem;
+  --shadow: 0px 3px 18px 0 rgba(0, 153, 255, 0.1);
 }
 
 * body {
@@ -83,6 +84,16 @@
           align-items: center;
 }
 
+* body .shadowClass {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+* body ._7thSec_PClass {
+  margin: 1.25rem 0;
+  color: var(--blackCol);
+}
+
 * body .container {
   width: 87.5rem;
   overflow: hidden;
@@ -102,7 +113,20 @@
   height: 3.5rem;
 }
 
-* body .container header nav div a {
+* body .container header nav .marginClass {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container header nav .marginClass a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--whiteCol);
@@ -189,11 +213,12 @@
   height: 100%;
   background-color: transparent;
   position: absolute;
-  top: -0.75rem;
-  left: -1.5rem;
+  top: -12.5%;
+  left: -12.5%;
+  width: 125%;
+  height: 125%;
   z-index: -1;
-  padding: 0.75rem 1.5rem;
-  border-radius: 22.5px;
+  border-radius: 1.4rem;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 3s;
@@ -312,6 +337,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+* body .container article ._2ndSec {
+  margin-top: 5.5rem;
 }
 
 * body .container article ._2ndSec h1 {
@@ -495,6 +524,11 @@
 
 * body .container article ._5thSec {
   text-align: center;
+  margin-top: 5.5rem;
+}
+
+* body .container article ._5thSec h1 {
+  margin-bottom: 5rem;
 }
 
 * body .container article ._5thSec iframe {
@@ -608,7 +642,49 @@
   font-weight: bold;
 }
 
-* body .container article ._6thSec .owl-carousel .owl-stage-outer .item .card .card-body p:last-child {
+* body .container article ._7thSec {
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+* body .container article ._7thSec ._7thSec_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   color: var(--blackCol);
+  margin-top: 5rem;
+  text-align: left;
+}
+
+* body .container article ._7thSec ._7thSec_Container img {
+  width: 100%;
+}
+
+* body .container article ._7thSec ._7thSec_Container h5 {
+  color: var(--blackCol);
+  font-weight: bold;
+}
+
+* body .container article ._7thSec ._7thSec_Container ._7thSec_MainBlock {
+  width: 55%;
+}
+
+* body .container article ._7thSec ._7thSec_Container ._7thSec_MainBlock ._7thSec_MainBlock_Container {
+  margin: 4rem 2.2rem 0 2.2rem;
+}
+
+* body .container article ._7thSec ._7thSec_Container ._7thSec_NotmainBlock {
+  width: 40%;
+}
+
+* body .container article ._7thSec ._7thSec_Container ._7thSec_NotmainBlock ._7thSec_NotmainBlock_Container {
+  margin: 2.3rem 2.2rem 0 2.2rem;
+  padding-bottom: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,6 +19,7 @@
         --margW: 0 7.5rem;
         --fontStyle: 'Open Sans', sans-serif;
         --_1secHight: 31.25rem;
+        --shadow: 0px 3px 18px 0 rgba(0, 153, 255, 0.1);
     }
 
     body {
@@ -73,6 +74,16 @@
             align-items: center;
         }
 
+        .shadowClass {
+            box-shadow: var(--shadow);
+        }
+
+        ._7thSec_PClass {
+            margin: 1.25rem 0;
+            color: var(--blackCol);
+            
+        }
+
         .container {
             width: 87.5rem;
             overflow: hidden;
@@ -84,8 +95,12 @@
                     justify-content: space-between;
                     align-items: center;
                     height: 3.5rem;
-    
-                    div {
+
+                    .marginClass {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
 
                         a {
                             text-decoration: none;
@@ -101,7 +116,6 @@
                             text-align: center;
                             margin: 0 0.5rem;
                         }
-
                     }
                 }
 
@@ -159,11 +173,12 @@
                                 height: 100%;
                                 background-color: transparent;
                                 position: absolute;
-                                top: -0.75rem;
-                                left: -1.5rem;
+                                top: -12.5%;
+                                left: -12.5%;
+                                width: 125%;
+                                height: 125%;
                                 z-index: -1;
-                                padding: 0.75rem 1.5rem;
-                                border-radius: 22.5px;
+                                border-radius: 1.4rem;
                                 transition-property: background-color;
                                 transition-duration: 3s;
                         }
@@ -257,6 +272,8 @@
                 flex-direction: column;
 
                 ._2ndSec {
+                    margin-top: 5.5rem;
+
                     h1 {
                         text-align: center;
                     }
@@ -408,6 +425,11 @@
 
                 ._5thSec {
                     text-align: center;
+                    margin-top: 5.5rem;
+
+                    h1 {
+                        margin-bottom: 5rem;
+                    }
 
                     iframe {
                         width: 41.875rem;
@@ -497,12 +519,48 @@
                                             color: var(--blackCol);
                                             font-weight: bold;
                                         }
-    
-                                        p:last-child {
-                                            color: var(--blackCol);
-                                        }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+
+                ._7thSec {
+                    text-align: center;
+                    margin-top: 5.5rem;
+
+                    ._7thSec_Container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: stretch;
+                        color: var(--blackCol);
+                        margin-top: 5rem;
+                        text-align: left;
+
+                        img {
+                            width: 100%;
+                        }
+                        
+                        h5 {
+                            color: var(--blackCol);
+                            font-weight: bold;
+                        }
+
+                        ._7thSec_MainBlock {
+                            width: 55%;
+
+                            ._7thSec_MainBlock_Container {
+                                margin: 4rem 2.2rem 0 2.2rem;
+                            }
+                        }
+
+                        ._7thSec_NotmainBlock {
+                            width: 40%;
+
+                            ._7thSec_NotmainBlock_Container {
+                                margin: 2.3rem 2.2rem 0 2.2rem;
+                                padding-bottom: 0.5rem;
                             }
                         }
                     }
