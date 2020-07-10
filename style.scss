@@ -19,7 +19,7 @@
         --margW: 0 7.5rem;
         --fontStyle: 'Open Sans', sans-serif;
         --_1secHight: 31.25rem;
-        --shadow: 0px 3px 18px 0 rgba(0, 153, 255, 0.1);
+        --shadow: 0px 3px 18px 0 var(--greyCol);
     }
 
     body {
@@ -76,6 +76,9 @@
 
         .shadowClass {
             box-shadow: var(--shadow);
+            &:last-child {
+                margin-top: 1rem;
+            }
         }
 
         ._7thSec_PClass {
@@ -562,6 +565,102 @@
                                 margin: 2.3rem 2.2rem 0 2.2rem;
                                 padding-bottom: 0.5rem;
                             }
+                        }
+                    }
+                }
+            }
+
+            footer {
+                width: 100%;
+                height: 16.2rem;
+                background-color: var(--headFooterCol);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+
+                .footerContainer {
+                    width: 100%;
+
+                    .footerButtons {
+                        width:100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 2.7rem;
+
+                        .whiteCompanyLogo {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: end;
+
+                            img {
+                                width: 2.5rem;
+                                height: 2.5rem;
+                            }
+
+                            p {
+                                display: inline-block;
+                                margin: 0 0 0 0.875rem;
+                                font-family: var(--fontStyle);
+                                font-size: 2rem;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: -0.96px;
+                                text-align: left;
+                                color: var(--whiteCol);
+                            }
+                        }
+
+                        .footerLinks {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            flex-wrap: nowrap;
+
+                            a {
+                                display: inline-block;
+                                text-decoration: none;
+                                margin: 0 0.4rem;
+
+                                font-family: var(--fontStyle);
+                                font-size: 0.875rem;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 2.14;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: var(--whiteCol);
+                            }
+                        }
+                    }
+                    .socials {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .socialsLogo {
+                            color: var(--whiteCol);
+                            font-size: 1rem;
+
+                            i {;
+                                margin: 0 1rem;
+                            }
+                        }
+
+                        .socialsText {
+                            font-family: var(--fontStyle);
+                            font-size: 0.875rem;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: var(--greyCol);
                         }
                     }
                 }

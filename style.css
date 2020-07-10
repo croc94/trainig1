@@ -16,7 +16,7 @@
   --margW: 0 7.5rem;
   --fontStyle: 'Open Sans', sans-serif;
   --_1secHight: 31.25rem;
-  --shadow: 0px 3px 18px 0 rgba(0, 153, 255, 0.1);
+  --shadow: 0px 3px 18px 0 var(--greyCol);
 }
 
 * body {
@@ -87,6 +87,10 @@
 * body .shadowClass {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+}
+
+* body .shadowClass:last-child {
+  margin-top: 1rem;
 }
 
 * body ._7thSec_PClass {
@@ -686,5 +690,132 @@
 * body .container article ._7thSec ._7thSec_Container ._7thSec_NotmainBlock ._7thSec_NotmainBlock_Container {
   margin: 2.3rem 2.2rem 0 2.2rem;
   padding-bottom: 0.5rem;
+}
+
+* body .container footer {
+  width: 100%;
+  height: 16.2rem;
+  background-color: var(--headFooterCol);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+* body .container footer .footerContainer {
+  width: 100%;
+}
+
+* body .container footer .footerContainer .footerButtons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.7rem;
+}
+
+* body .container footer .footerContainer .footerButtons .whiteCompanyLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+* body .container footer .footerContainer .footerButtons .whiteCompanyLogo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+* body .container footer .footerContainer .footerButtons .whiteCompanyLogo p {
+  display: inline-block;
+  margin: 0 0 0 0.875rem;
+  font-family: var(--fontStyle);
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  text-align: left;
+  color: var(--whiteCol);
+}
+
+* body .container footer .footerContainer .footerButtons .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+* body .container footer .footerContainer .footerButtons .footerLinks a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0.4rem;
+  font-family: var(--fontStyle);
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--whiteCol);
+}
+
+* body .container footer .footerContainer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .container footer .footerContainer .socials .socialsLogo {
+  color: var(--whiteCol);
+  font-size: 1rem;
+}
+
+* body .container footer .footerContainer .socials .socialsLogo i {
+  margin: 0 1rem;
+}
+
+* body .container footer .footerContainer .socials .socialsText {
+  font-family: var(--fontStyle);
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--greyCol);
 }
 /*# sourceMappingURL=style.css.map */
